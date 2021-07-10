@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/sanchis/portfolio/issues"
   },
-  "homepage": "https://github.com/sanchis/portfolio#readme"
+  "homepage": "https://github.com/sanchis/portfolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
 }
