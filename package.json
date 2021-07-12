@@ -18,9 +18,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "balm-ui": "8.40.4",
     "core-js": "3.15.1",
-    "nuxt": "2.15.7"
+    "nuxt": "2.15.7",
+    "nuxt-buefy": "0.4.8"
   },
   "devDependencies": {
     "standard": "16.0.3"
