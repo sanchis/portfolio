@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <h1 class="title has-text-centered">Stack Tecnologico</h1>
+    <h1 class="title has-text-centered has-text-primary">Stack Tecnologico</h1>
 
     <div class="stack-tech is-size-2">
       <div
