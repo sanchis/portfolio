@@ -21,7 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/styles/main.scss'
+    '~/assets/styles/main.scss',
+    'devicon/devicon.min.css'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -29,7 +30,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxt/content'
+
   ],
 
   styleResources: {

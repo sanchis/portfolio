@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "name": "typescript-plain",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "react-plain",
+      "url": "https://es.reactjs.org/"
+    },
+    {
+      "name": "vuejs-plain",
+      "url": "https://es.vuejs.org/"
+    },
+    {
+      "name": "angularjs-plain",
+      "url": "https://angular.io/"
+    },
+    {
+      "name": "javascript-plain",
+      "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+    },
+    {
+      "name": "git-plain",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "name": "mysql-plain",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "css3-plain",
+      "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+    },
+    {
+      "name": "sass-plain",
+      "url": "https://sass-lang.com/"
+    },
+    {
+      "name": "linux-plain",
+      "url": "https://www.linux.org/"
+    },
+    {
+      "name": "ionic-original",
+      "url": "https://ionicframework.com/"
+    },
+    {
+      "name": "postgresql-plain",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "name": "mongodb-plain",
+      "url": "https://www.mongodb.com"
+    },
+    {
+      "name": "php-plain",
+      "url": "https://www.php.net/manual/es/intro-whatis.php"
+    },
+    {
+      "name": "docker-plain",
+      "url": "https://www.docker.com/"
+    },
+    {
+      "name": "nodejs-plain",
+      "url": "https://nodejs.org/es/"
+    },
+    {
+      "name": "express-original",
+      "url": "https://expressjs.com/es/"
+    },
+    {
+      "name": "vscode-plain",
+      "url": "https://code.visualstudio.com/"
+    },
+    {
+      "name": "nextjs-plain",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "android-plain",
+      "url": "https://www.android.com/intl/es_es/"
+    }
+  ]
+}
