@@ -1,4 +1,5 @@
-# portfolio
+# Portfolio Adrián Sanchis Gallego
+Simple portfolio build with nuxtjs.
 
 ## Build Setup
 

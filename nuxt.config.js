@@ -21,7 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/styles/global.css'
+    '~/assets/styles/main.scss'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -29,11 +29,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: './assets/styles/variables.scss'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-buefy'
+    ['nuxt-buefy', { css: false, materialDesignIcons: false }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
