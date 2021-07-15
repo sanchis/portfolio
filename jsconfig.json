@@ -1,7 +1,5 @@
 {
-  "compilerOptions": {
-    "baseUrl": "."
-  },
+  "compilerOptions": {},
   "exclude": [
     "node_modules",
     ".nuxt",

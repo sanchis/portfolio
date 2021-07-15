@@ -1,5 +1,14 @@
 {
-  "data":[
-
+  "data": [
+    {
+      "name": "Smersh",
+      "source": "https://github.com/CMEPW/Smersh",
+      "imgUrl": "https://raw.githubusercontent.com/CMEPW/Smersh/master/logo.png",
+      "summary": "Smersh es una herramienta de colaboración orientada al pentest que se utiliza para seguir el progreso de las misiones de su empresa y generar relaciones",
+      "demo": "",
+      "stack":[
+        "angularjs-plain"
+      ]
+    }
   ]
 }
