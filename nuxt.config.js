@@ -35,7 +35,7 @@ export default {
 
   ],
   router: {
-    base: '/sanchis/'
+    base: '/portfolio/'
   },
   styleResources: {
     scss: './assets/styles/variables.scss'
