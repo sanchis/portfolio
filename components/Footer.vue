@@ -6,10 +6,10 @@
         <a :href="intro.linkedinProfile">{{ intro.name }}</a
         >.
       </p>
-      <a :href="intro.linkedinProfile">
+      <a :href="intro.linkedinProfile" aria-label="linkedin">
         <i class="devicon-linkedin-plain is-size-5"></i>
       </a>
-      <a :href="intro.githubProfile">
+      <a :href="intro.githubProfile" aria-label="github">
         <i class="devicon-github-original is-size-5"></i>
       </a>
     </div>

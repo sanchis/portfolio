@@ -8,7 +8,7 @@
       :key="project.name"
     >
       <figure class="is-one-fifth column has-text-centered-mobile">
-        <img :src="project.imgUrl" />
+        <img :src="project.imgUrl" :alt="`project-${project.name}`" />
       </figure>
       <div class="column">
         <h3 class="is-size-3">{{ project.name }}</h3>
