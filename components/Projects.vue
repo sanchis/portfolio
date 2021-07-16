@@ -1,5 +1,5 @@
 <template>
-  <section class="section" v-if="projects && projects.data.length > 0">
+  <section class="section" v-if="projects && projects.data && projects.data.length > 0">
     <h1 class="title has-text-centered has-text-accent">Proyectos</h1>
 
     <div
