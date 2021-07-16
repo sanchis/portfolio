@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Portfolio de Adrian Sanchis Gallego' },
       { property: 'og:description', content: 'Portfolio de Adrian Sanchis Gallego' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'asanchis.dev/og.png' },
+      { property: 'og:image', content: '/og.png' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'theme-color', content: '#89decd' }
     ],
