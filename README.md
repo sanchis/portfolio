@@ -1,5 +1,8 @@
 # Portfolio Adrián Sanchis Gallego
 Simple portfolio build with nuxtjs.
+<p align="center">
+  <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/static/og.png">
+</p>
 
 ## Build Setup
 
