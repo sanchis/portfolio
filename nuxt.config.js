@@ -36,7 +36,7 @@ export default {
   ],
   router: {
     base: '/sanchis/'
-  }
+  },
   styleResources: {
     scss: './assets/styles/variables.scss'
   },
