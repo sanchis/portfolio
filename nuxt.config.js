@@ -34,7 +34,9 @@ export default {
     '@nuxt/content'
 
   ],
-
+  router: {
+    base: '/sanchis/'
+  }
   styleResources: {
     scss: './assets/styles/variables.scss'
   },
