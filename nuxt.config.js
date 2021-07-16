@@ -4,18 +4,25 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Portfolio Adrián Sanchis Gallego',
     htmlAttrs: {
       lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio of Adrian Sanchis Gallego' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { property: 'og:title', content: 'Portfolio de Adrian Sanchis Gallego' },
+      { hid: 'description', name: 'description', content: 'Portfolio de Adrian Sanchis Gallego' },
+      { property: 'og:description', content: 'Portfolio de Adrian Sanchis Gallego' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: 'asanchis.dev/og.png' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme-color', content: '#89decd' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png' }
     ]
   },
 
