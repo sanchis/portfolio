@@ -7,14 +7,14 @@
       v-for="project in projects.data"
       :key="project.name"
     >
-      <figure class="is-one-fifth column">
+      <figure class="is-one-fifth column has-text-centered-mobile">
         <img :src="project.imgUrl" />
       </figure>
       <div class="column">
         <h3 class="is-size-3">{{ project.name }}</h3>
         <p class="content">{{ project.summary }}</p>
         <div class="stack columns">
-          <div class="column">
+          <div class="column has-text-centered-mobile">
             <b-tag
               type="is-light is-medium"
               v-for="technology in project.stack"
@@ -23,7 +23,7 @@
               <i v-bind:class="`devicon-${technology} colored`"></i>
             </b-tag>
           </div>
-          <div class="column has-text-right">
+          <div class="column has-text-right has-text-centered-mobile">
             <a :href="project.source" class="button is-dark">
               <span class="icon">
                 <i class="devicon-github-original"></i>

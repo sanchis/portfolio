@@ -34,9 +34,6 @@ export default {
     '@nuxt/content'
 
   ],
-  router: {
-    base: '/portfolio/'
-  },
   styleResources: {
     scss: './assets/styles/variables.scss'
   },
