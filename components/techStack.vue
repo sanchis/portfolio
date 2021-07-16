@@ -8,6 +8,7 @@
         v-for="technology in stack.data"
         :key="technology.name"
         :href="technology.url"
+        :aria-label="technology.name"
       >
         <i v-bind:class="`devicon-${technology.name} colored`"></i>
       </a>

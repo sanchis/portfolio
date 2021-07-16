@@ -3,6 +3,7 @@
     <img
       :src="require(`~/assets/${intro.imageName}`)"
       style="width: 40%"
+      alt="logo"
       class="is-block m-auto p-5"
     />
 
@@ -15,11 +16,25 @@
     <p class="is-italic has-text-centered">
       {{ intro.aboutMe }}
     </p>
-    <div class="is-flex is-flex-direction-row is-justify-content-center mt-4 is-size-4">
-      <a :href="intro.linkedinProfile" class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+    <div
+      class="
+        is-flex is-flex-direction-row is-justify-content-center
+        mt-4
+        is-size-4
+      "
+    >
+      <a
+        :href="intro.linkedinProfile"
+        aria-label="linkedin"
+        class="box has-text-centered mr-2 ml-2 mb-0 mt-0"
+      >
         <i class="devicon-linkedin-plain colored"></i>
       </a>
-      <a :href="intro.githubProfile" class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+      <a
+        :href="intro.githubProfile"
+        aria-label="github"
+        class="box has-text-centered mr-2 ml-2 mb-0 mt-0"
+      >
         <i class="devicon-github-original colored"></i>
       </a>
     </div>
