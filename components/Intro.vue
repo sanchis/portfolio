@@ -2,9 +2,8 @@
   <section class="section" v-if="intro">
     <img
       :src="require(`~/assets/${intro.imageName}`)"
-      style="width: 40%"
       alt="logo"
-      class="is-block m-auto p-5"
+      class="is-block m-auto p-5 logo"
     />
 
     <h1 class="title has-text-centered has-text-weight-light">
@@ -46,3 +45,10 @@ export default {
   props: ["intro"],
 };
 </script>
+
+<style lang="scss" scoped>
+.logo{
+  width: 100%;
+  max-width: 500px;
+}
+</style>
