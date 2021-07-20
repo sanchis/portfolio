@@ -1,5 +1,8 @@
 <template>
-  <section class="section" v-if="projects && projects.data && projects.data.length > 0">
+  <section
+    class="section"
+    v-if="projects && projects.data && projects.data.length > 0"
+  >
     <h1 class="title has-text-centered has-text-accent">Proyectos</h1>
 
     <div
@@ -48,3 +51,18 @@ export default {
   props: ["projects"],
 };
 </script>
+
+<style lang="scss" scoped>
+.tag {
+  margin: 0px 3px;
+  &:first-child{
+    margin-right:3px ;
+    margin-left: 0px;
+  }
+
+  &:last-child{
+    margin-right:0px ;
+    margin-left: 3px;
+  }
+}
+</style>
