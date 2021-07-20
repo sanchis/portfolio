@@ -17,7 +17,8 @@ export default {
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: '/og.png' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'theme-color', content: '#89decd' }
+      { name: 'theme-color', content: '#89decd' },
+      { name: 'google-site-verification', content: 'bnDck8whGv2SHMuVDS7gTTXGDQ0d2G_ux3wucCIVyIc' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
