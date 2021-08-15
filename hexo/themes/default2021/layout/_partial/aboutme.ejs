@@ -1,0 +1,102 @@
+
+<style>
+.buttons-intro{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+</style>
+<h1 class="title has-text-centered has-text-weight-light mb-3">
+  <%- page.hello
+      %>
+    <strong class="has-text-weight-bold has-text-accent">
+      <%- config.author
+          %>
+    </strong>
+</h1>
+<p class="is-italic has-text-centered">
+  <%- page.me
+      %>
+</p>
+<div class="buttons-intro mt-4 is-size-4">
+  <a href="https://www.linkedin.com/in/<%- theme.linkedinProfile %>"
+     aria-label="linkedin"
+     class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+    <i class="devicon-linkedin-plain colored"></i>
+  </a>
+  <a href="https://github.com/<%- theme.githubProfile %>"
+     aria-label="github"
+     class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+    <i class="devicon-github-original colored"></i>
+  </a>
+</div>
+
+
+<section class="section"
+         v-if="projects && projects.data && projects.data.length > 0">
+  <h1 class="title has-text-centered has-text-accent mb-3">Proyectos</h1>
+  <% eval(page.projects).forEach((project)=> { %>
+    <div class="box columns">
+      <figure class="is-one-fifth column has-text-centered-mobile">
+        <img src="<%- project.imgUrl %>"
+             alt="project-<%- project.name %>" />
+      </figure>
+      <div class="column">
+        <h3 class="is-size-3">
+          <%- project.name
+              %>
+        </h3>
+        <p class="content">
+          <%- project.summary
+              %>
+        </p>
+        <div class="stack columns">
+          <div class="column has-text-centered-mobile">
+
+            <% project.stack.forEach((stack)=> { %>
+
+              <span class="tag is-light is-medium"   >
+                <i v-bind:class="`devicon-<%- stack %> colored`"></i>
+              </span>
+              <% })
+                 %>
+          </div>
+          <div class="column has-text-right has-text-centered-mobile">
+            <a href="<%- project.source %>"
+               class="button is-dark">
+              <span class="icon">
+                <i class="devicon-github-original"></i>
+              </span>
+              <span>Codigo fuente</span>
+            </a>
+            <a href="<%- project.demo %>"
+               class="button is-accent">
+              <span class="icon">
+                <i class="devicon-devicon-plain colored"></i>
+              </span>
+              <span>Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% })
+       %>
+</section>
+
+<section class="section">
+  <h1 class="title has-text-centered has-text-accent mb-3">Stack Tecnológico</h1>
+
+  <div class="stack-tech is-size-2">
+  <% eval(page.stack).forEach((stack) => { %>
+      <a
+      class="box has-text-centered"
+      href="<%- stack.url %>"
+      aria-label="<%- stack.name %>"
+      >
+      <i v-bind:class="`devicon-${technology.name} colored`"></i>
+    </a>
+    <% }) %>
+  </div>
+</section>
