@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {},
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
-}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Covid Alicante",
+    "source": "https://github.com/sanchis/covid-alicante",
+    "imgUrl": "https://raw.githubusercontent.com/sanchis/covid-alicante/main/public/logo.png",
+    "summary": "Ultimas estadísticas sobre el covid en la ciudad de Alicante. Información sobre todos los municipios de la ciudad de Alicante",
+    "demo": "https://covid-alicante.asanchis.dev/",
+    "stack": [
+      "nextjs-original",
+      "css3-plain",
+      "nodejs-plain"
+    ]
+  },
+  {
+    "name": "Devaway Racing Services",
+    "source": "https://github.com/sanchis/DevAway-Racing-Services-angular",
+    "imgUrl": "https://raw.githubusercontent.com/sanchis/DevAway-Racing-Services-angular/main/gh-images/logo.png",
+    "summary": "Project related to a technical interview on devaway.io. Show the list of pilots with their times.",
+    "demo": "https://sanchis.github.io/DevAway-Racing-Services-angular/",
+    "stack": [
+      "sass-original",
+      "typescript-plain",
+      "css3-plain",
+      "angularjs-plain"
+    ]
+  }
+]
