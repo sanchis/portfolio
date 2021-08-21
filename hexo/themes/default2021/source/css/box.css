@@ -1,8 +1,0 @@
-.box {
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: var(--bx-shadow);
-  color: var(--primary);
-  display: block;
-  padding: 1.25rem;
-}

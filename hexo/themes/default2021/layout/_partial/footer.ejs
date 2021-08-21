@@ -1,6 +1,6 @@
 <footer class="footer pb-6">
   <div class="content has-text-centered">
-    <p>
+    <p class="mb-3">
       <%- render(theme.copyright, 'ejs'); %>
       <% if (theme.linkedinProfile){ %>
         <a href="https://www.linkedin.com/in/<%= theme.linkedinProfile %>"><%= config.author %></a
@@ -14,7 +14,7 @@
     <% } %>
 
     <% if (theme.linkedinProfile){ %>
-      <a :href="https://github.com/<%= theme.githubProfile %>" aria-label="github">
+      <a href="https://github.com/<%= theme.githubProfile %>" aria-label="github">
         <i class="devicon-github-original is-size-5"></i>
       </a>
     <% } %>
