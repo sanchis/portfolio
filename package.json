@@ -13,7 +13,7 @@
     "version": "5.0.0"
   },
   "dependencies": {
-    "devicon": "2.13.0",
+    "devicon": "2.14.0",
     "fs-extra": "10.0.0",
     "hexo": "5.4.0",
     "hexo-all-minifier": "^0.5.7",
