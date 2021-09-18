@@ -15,13 +15,25 @@
     "name": "Devaway Racing Services",
     "source": "https://github.com/sanchis/DevAway-Racing-Services-angular",
     "imgUrl": "https://raw.githubusercontent.com/sanchis/DevAway-Racing-Services-angular/main/gh-images/logo.png",
-    "summary": "Project related to a technical interview on devaway.io. Show the list of pilots with their times.",
+    "summary": "Proyecto relacionado con una entrevista técnica en devaway.io. Muestra la lista de pilotos de karts con sus respectivos tiempos.",
     "demo": "https://sanchis.github.io/DevAway-Racing-Services-angular/",
     "stack": [
       "sass-original",
       "typescript-plain",
       "css3-plain",
       "angularjs-plain"
+    ]
+  },
+  {
+    "name": "Simple Weather",
+    "source": "https://github.com/sanchis/MySimpleWeather",
+    "imgUrl": "https://raw.githubusercontent.com/sanchis/MySimpleWeather/7967a4edfa1ea4487891c05928cb2ea4397b2e6a/public/weather-icons/12.svg",
+    "summary": "Aplicación de tiempo muy simple y haciendo especial esfuerzo en el diseño simple y minimalista.",
+    "demo": "https://weather.asanchis.dev/",
+    "stack": [
+      "typescript-plain",
+      "css3-plain",
+      "react-original"
     ]
   }
 ]
