@@ -1,7 +1,7 @@
 # Portfolio Adrián Sanchis Gallego
 Simple portfolio build with hexo.
 <p align="center">
-  <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/static/og.png">
+  <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/themes/default2021/source/img/og.png">
 </p>
 
 ## Build Setup
