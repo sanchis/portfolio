@@ -35,5 +35,16 @@
       "css3-plain",
       "react-original"
     ]
+  },
+  {
+    "name": "Rick & Morty",
+    "source": "https://github.com/sanchis/Rick-Morty",
+    "imgUrl": "https://raw.githubusercontent.com/sanchis/Rick-Morty/main/assets/logo.png",
+    "summary": "Listado de todos los personajes de rick and morty utilizando la api https://rickandmortyapi.com/. Podrás ver todos los detalles de todos los personajes de la serie.",
+    "demo": "https://sanchis.github.io/Rick-Morty/",
+    "stack": [
+      "javascript-plain",
+      "react-original"
+    ]
   }
 ]
