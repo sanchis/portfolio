@@ -10,7 +10,7 @@
     "copyDep": "node copy_dep.js"
   },
   "hexo": {
-    "version": "5.0.0"
+    "version": "5.4.0"
   },
   "dependencies": {
     "devicon": "2.14.0",
