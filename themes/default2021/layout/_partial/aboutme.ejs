@@ -1,104 +1,32 @@
 <style>
-  .buttons-intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .logo {
-    max-width: 500px;
-    width: 100%;
-    display: block;
-  }
-
-  .projects .box {
-    display: flex;
-    margin-top: 1rem;
-  }
-
-  .projects h3{
-    font-weight: 400;
-  }
-
-  .projects figure{
-    width: 200px;
-  }
-  .projects figure img{
-    height: auto;
-    width: 200px;
-    object-fit: cover;
-  }
-  .projects .box .stack {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .projects .box .stack .tag:first-child {
-    margin-right: 2.5px;
-  }
-
-  .projects .box .stack .tag {
-    margin: 0px 2.5px;
-  }
-
-  .projects .box .stack .tag:last-child {
-    margin-left: 2.5px;
-  }
-
-  .stack-tech{
+  .stack-tech {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     justify-content: center;
     align-items: center;
     align-content: center;
     grid-gap: 1rem;
   }
 
-  @media screen and (max-width: 1024px) {
-    .projects .box{
-      flex-direction: column;
-    }
 
-    .projects figure{
-      margin: auto;
-      width: 100%;
-    }
-    .projects figure img{
-      width: 50%;
-    }
-
-    .projects .stack{
-      flex-direction: column;
-    }
-
-    .projects .stack div{
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
   }
-
 </style>
 <h1 class="title has-text-centered has-text-weight-light mb-3">
-  <%- page.hello
-      %>
+  <%- page.hello %>
     <strong class="has-text-weight-bold has-text-accent">
-      <%- config.author
-          %>
+      <%- config.author %>
     </strong>
 </h1>
 <p class="is-italic has-text-centered">
-  <%- page.me
-      %>
+  <%- page.me %>
 </p>
 <div class="buttons-intro mt-4 is-size-4">
-  <a href="https://www.linkedin.com/in/<%- theme.linkedinProfile %>"
-     aria-label="linkedin" target="_blank" rel="noopener noreferrer"
-     class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+  <a href="https://www.linkedin.com/in/<%- theme.linkedinProfile %>" aria-label="linkedin" target="_blank"
+    rel="noopener noreferrer" class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
     <i class="devicon-linkedin-plain colored"></i>
   </a>
-  <a href="https://github.com/<%- theme.githubProfile %>" target="_blank" rel="noopener noreferrer"
-     aria-label="github"
-     class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
+  <a href="https://github.com/<%- theme.githubProfile %>" target="_blank" rel="noopener noreferrer" aria-label="github"
+    class="box has-text-centered mr-2 ml-2 mb-0 mt-0">
     <i class="devicon-github-original colored"></i>
   </a>
 </div>
@@ -109,18 +37,14 @@
   <% eval(page.projects).forEach((project)=> { %>
     <div class="box">
       <figure class="has-text-centered p-3">
-        <img src="<%- project.imgUrl %>"
-             class="project-logo"
-             alt="project-<%- project.name %>" />
+        <img src="<%- project.imgUrl %>" class="project-logo" alt="project-<%- project.name %>" />
       </figure>
       <div>
         <h3 class="is-size-3">
-          <%- project.name
-              %>
+          <%- project.name %>
         </h3>
         <p class="content">
-          <%- project.summary
-              %>
+          <%- project.summary %>
         </p>
         <div class="stack mt-3 mb-3">
           <div class=" has-text-centered">
@@ -130,19 +54,16 @@
               <span class="tag is-size-5 ">
                 <i class="devicon-<%- stack %> colored"></i>
               </span>
-              <% })
-                 %>
+              <% }) %>
           </div>
           <div class="has-text-centered">
-            <a href="<%- project.source %>" target="_blank" rel="noopener noreferrer"
-               class="button is-dark mr-1">
+            <a href="<%- project.source %>" target="_blank" rel="noopener noreferrer" class="button is-dark mr-1">
               <span class="icon">
                 <i class="devicon-github-original"></i>
               </span>
               <span>Codigo fuente</span>
             </a>
-            <a href="<%- project.demo %>" target="_blank" rel="noopener noreferrer"
-               class="button is-accent ml-1">
+            <a href="<%- project.demo %>" target="_blank" rel="noopener noreferrer" class="button is-accent ml-1">
               <span class="icon">
                 <i class="devicon-devicon-plain colored"></i>
               </span>
@@ -152,8 +73,7 @@
         </div>
       </div>
     </div>
-    <% })
-       %>
+    <% }) %>
 </section>
 
 <section class="section">
@@ -161,12 +81,10 @@
 
   <div class="stack-tech is-size-2">
     <% eval(page.stack).forEach((stack)=> { %>
-      <a class="box has-text-centered"
-         href="<%- stack.url %>" target="_blank" rel="noopener noreferrer"
-         aria-label="<%- stack.name %>">
+      <a class="box has-text-centered" href="<%- stack.url %>" target="_blank" rel="noopener noreferrer"
+        aria-label="<%- stack.name %>">
         <i class="devicon-<%-stack.name %> colored"></i>
       </a>
-      <% })
-         %>
+      <% }) %>
   </div>
 </section>

@@ -1,5 +1,5 @@
 {
-  "name": "@example/portfolio",
+  "name": "portfolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-preact": "^0.3.0",
     "astro": "^0.21.0",
-    "@astrojs/renderer-preact": "^0.3.0"
+    "devicon": "^2.14.0"
   }
 }

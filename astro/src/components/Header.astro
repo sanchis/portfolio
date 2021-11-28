@@ -1,0 +1,54 @@
+---
+import { author,linkedinUrl, githubUrl, url, aboutMe } from '../data/site.json'
+import Box from '../components/Box.astro'
+---
+<style lang="scss">
+.logo {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+}
+.buttons-intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    a {
+        padding: 10px;
+    }
+}
+</style>
+
+
+<header id="header">
+    <img
+        src="img/face-primary.png"
+        alt="logo"
+        class="is-block m-auto p-5 logo"
+    />
+</header>
+
+<h1 class="title has-text-centered has-text-weight-light mb-3">
+    Hola! Soy
+    <strong class="has-text-weight-bold has-text-accent">
+        {author}
+    </strong>
+</h1>
+<p class="is-italic has-text-centered">
+  {aboutMe}
+</p>
+<div class="buttons-intro mt-4 is-size-4">
+  <a href={linkedinUrl}
+     aria-label="linkedin" target="_blank" rel="noopener noreferrer"
+     class="has-text-centered mb-0 mt-0">
+    <Box class="p-2">
+        <i class="devicon-linkedin-plain colored"></i>
+    </Box>
+  </a>
+  <a href={githubUrl} target="_blank" rel="noopener noreferrer"
+     aria-label="github"
+     class="has-text-centered mb-0 mt-0">
+     <Box>
+        <i class="devicon-github-original colored"></i>
+     </Box>
+  </a>
+</div>

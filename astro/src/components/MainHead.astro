@@ -1,13 +1,26 @@
 ---
-const { title = 'Jeanine White: Personal Site', description = 'The personal site of Jeanine White' } = Astro.props;
+
+import { description as defaultDescription, title as titleDefault, url } from '../data/site.json'
+const { title = titleDefault, description = defaultDescription } = Astro.props;
 ---
 
-<meta charset="UTF-8">
-<meta name="description" property="og:description" content={description}>
-<meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
 <title>{title}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content{description}>
+<meta name='google-site-verification' content='bnDck8whGv2SHMuVDS7gTTXGDQ0d2G_ux3wucCIVyIc'>
+<link rel="icon" href="img/favicon-16x16.png" type="image/png">
+<link rel="icon" href="img/favicon-32x32.png" type="image/png">
+<link rel="icon" href="img/favicon-96x96.png" type="image/png">
 
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<meta property="og:type" content="website">
+<meta property="og:title" content={title}>
+<meta property="og:url" content={url}>
+<meta property="og:site_name">
+<meta property="og:description" content={description}>
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content={`${url}/img/og.png`}>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content={`${url}/img/og.png`}>
+<link rel="shortcut icon" href="img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/src/scss/global.scss">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet">

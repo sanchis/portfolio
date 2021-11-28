@@ -1,0 +1,24 @@
+---
+import { linkedinUrl, gitHubUrl, author } from '../data/site.json'
+---
+<style lang="scss">
+@import '../scss/variables';
+.footer {
+  background-color: $light;
+  padding: 3rem 1.5rem 6rem;
+}
+</style>
+<footer class="footer pb-6">
+  <div class="content has-text-centered">
+    <p class="mb-3">
+        <a href={linkedinUrl}>{author}</a>.
+    </p>
+    <a href={linkedinUrl} aria-label="linkedin">
+        <i class="devicon-linkedin-plain is-size-5"></i>
+    </a>
+
+    <a href={gitHubUrl} aria-label="github">
+        <i class="devicon-github-original is-size-5"></i>
+    </a>
+  </div>
+</footer>
