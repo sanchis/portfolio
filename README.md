@@ -4,17 +4,17 @@ Simple portfolio build with hexo.
   <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/themes/default2021/source/img/og.png">
 </p>
 
-## Build Setup
+## 🧞 Commands
 
-```bash
-# install dependencies
-$ npm install
+All commands are run from the root of the project, from a terminal:
 
-# serve at localhost:4000
-$ npm run server
+| Command           | Action                                       |
+|:----------------  |:-------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
 
-# build for production and launch server
-$ npm run build
-```
+## 👀 Want to learn more?
 
-For detailed explanation on how things work, check out the [documentation](https://hexo.io/docs/).
+Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
