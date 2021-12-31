@@ -1,6 +1,6 @@
 ---
 
-import { description as defaultDescription, title as titleDefault, url } from '../data/site.json'
+import { description as defaultDescription, title as titleDefault } from '../data/site.json'
 const { title = titleDefault, description = defaultDescription } = Astro.props;
 ---
 
@@ -19,8 +19,8 @@ const { title = titleDefault, description = defaultDescription } = Astro.props;
 <meta property="og:site_name">
 <meta property="og:description" content={description}>
 <meta property="og:locale" content="es_ES">
-<meta property="og:image" content={`${Astro.site}/img/og.png`}>
+<meta property="og:image" content={`${Astro.site}img/og.png`}>
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content={`${Astro.site}/img/og.png`}>
+<meta name="twitter:image" content={`${Astro.site}img/og.png`}>
 <link rel="shortcut icon" href="img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/src/scss/global.scss">
