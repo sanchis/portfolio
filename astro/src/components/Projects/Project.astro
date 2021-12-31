@@ -1,0 +1,93 @@
+---
+import Box from './../Box.astro'
+import Button from './../Button.astro'
+const { project } = Astro.props;
+---
+
+<style lang="scss">
+.boxProject{
+  display: flex !important;
+  .stack {
+      display: flex;
+      justify-content: space-between;
+      .tag {
+          margin: 0px 2.5px;
+          &:first-child {
+              margin-right: 2.5px;
+          }
+          &:last-child {
+              margin-left: 2.5px;
+          }
+      }
+  }
+
+
+  h3 {
+      font-weight: 400;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      img {
+          height: 100px;
+          width: 200px;
+          object-fit: contain;
+      }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    figure {
+        margin: auto;
+        img {
+
+        }
+    }
+
+    .stack {
+        flex-direction: column;
+        div {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+  }
+}
+</style>
+<Box class="boxProject mt-5">
+  <figure class="has-text-centered p-3">
+      <img src={project.imgUrl} class="project-logo" alt={`project-${project.name}`} />
+  </figure>
+  <div>
+      <h3 class="is-size-4">
+          {project.name}
+      </h3>
+      <p class="content">
+          {project.summary}
+      </p>
+      <div class="stack mt-3 mb-3">
+          <div class=" has-text-centered">
+
+              {project.stack.map(stack =>
+                  <span class="tag is-size-5 ">
+                      <i class={`devicon-${stack} colored`}></i>
+                  </span>
+              )}
+          </div>
+          <div class="has-text-centered">
+              <Button href={project.source} target="_blank" class="is-dark mr-1">
+                  <span class="icon">
+                      <i class="devicon-github-original"></i>
+                  </span>
+                  <span>Codigo fuente</span>
+              </Button>
+              <Button href={project.demo} target="_blank" class="is-accent ml-1">
+                  <span class="icon">
+                      <i class="devicon-devicon-plain colored"></i>
+                  </span>
+                  <span>Demo</span>
+              </Button>
+          </div>
+      </div>
+  </div>
+</Box>

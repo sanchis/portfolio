@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <title><% if (page.title){ %><%= page.title %>  <% }else{ %><%= config.title  %><%  } %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<%- config.description %>">
+  <meta name='google-site-verification', content='bnDck8whGv2SHMuVDS7gTTXGDQ0d2G_ux3wucCIVyIc'>
+  <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+  <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+  <link rel="icon" href="img/favicon-96x96.png" type="image/png">
+  <%- open_graph({ title: page.title, type:'website', image: 'img/og.png' }) %>
+  <% if (theme.favicon){ %>
+    <%- favicon_tag(theme.favicon) %>
+  <% } %>
+    <%- css('css/index') %>
+    <%- css('css/devicon.min') %>
+</head>

@@ -1,6 +1,7 @@
 ---
 import { author,linkedinUrl, githubUrl, url, aboutMe } from '../data/site.json'
 import Box from '../components/Box.astro'
+import Button from '../components/Button.astro'
 ---
 <style lang="scss">
 .logo {
@@ -37,18 +38,18 @@ import Box from '../components/Box.astro'
   {aboutMe}
 </p>
 <div class="buttons-intro mt-4 is-size-4">
-  <a href={linkedinUrl}
+  <Button href={linkedinUrl}
      aria-label="linkedin" target="_blank" rel="noopener noreferrer"
-     class="has-text-centered mb-0 mt-0">
+     class="has-text-centered mb-0 mt-0 p-1 is-size-5 ghost">
     <Box class="p-2">
         <i class="devicon-linkedin-plain colored"></i>
     </Box>
-  </a>
-  <a href={githubUrl} target="_blank" rel="noopener noreferrer"
+  </Button>
+  <Button href={githubUrl} target="_blank" rel="noopener noreferrer"
      aria-label="github"
-     class="has-text-centered mb-0 mt-0">
+     class="has-text-centered mb-0 mt-0 p-1 is-size-5 ghost">
      <Box>
         <i class="devicon-github-original colored"></i>
      </Box>
-  </a>
+  </Button>
 </div>

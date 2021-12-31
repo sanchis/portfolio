@@ -1,5 +1,6 @@
 ---
-import { linkedinUrl, gitHubUrl, author } from '../data/site.json'
+import { linkedinUrl, githubUrl, author } from '../data/site.json'
+import Button from './Button.astro'
 ---
 <style lang="scss">
 @import '../scss/variables';
@@ -11,14 +12,14 @@ import { linkedinUrl, gitHubUrl, author } from '../data/site.json'
 <footer class="footer pb-6">
   <div class="content has-text-centered">
     <p class="mb-3">
-        <a href={linkedinUrl}>{author}</a>.
+        <Button class="ghost" href={linkedinUrl}>{author}</Button>
     </p>
-    <a href={linkedinUrl} aria-label="linkedin">
+    <Button href={linkedinUrl} class="ghost" aria-label="linkedin">
         <i class="devicon-linkedin-plain is-size-5"></i>
-    </a>
+    </Button>
 
-    <a href={gitHubUrl} aria-label="github">
+    <Button href={githubUrl} class="ghost" aria-label="github">
         <i class="devicon-github-original is-size-5"></i>
-    </a>
+    </Button>
   </div>
 </footer>

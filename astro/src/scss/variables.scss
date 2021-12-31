@@ -8,6 +8,7 @@ $light: #f5f5f5;
 $white: #fff;
 
 $bx-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+$bx-shadow-accent: 0 0.5em 1em -0.125em $accent, 0 0 0 1px $accent;
 
 $fontSize: 1em;
 
@@ -17,4 +18,4 @@ $multiplierSpace: 0.25;
 $multiplierFont: 0.5;
 
 $fontFamily: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  Helvetica Neue, Helvetica, Arial, sans-serif;
