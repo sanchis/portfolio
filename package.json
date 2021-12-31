@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run minify",
+    "build": "astro build && npm run copy-deps && npm run minify",
     "minify": "node minify.js",
+    "copy-deps": "node copyDeps.js",
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.21.0",
-    "devicon": "^2.14.0",
-    "html-minifier": "^4.0.0"
+    "astro": "0.21.0",
+    "devicon": "2.14.0",
+    "fs-extra": "10.0.0",
+    "html-minifier": "4.0.0"
   }
 }
