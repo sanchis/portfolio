@@ -15,12 +15,12 @@ const { title = titleDefault, description = defaultDescription } = Astro.props;
 
 <meta property="og:type" content="website">
 <meta property="og:title" content={title}>
-<meta property="og:url" content={url}>
+<meta property="og:url" content={Astro.site}>
 <meta property="og:site_name">
 <meta property="og:description" content={description}>
 <meta property="og:locale" content="es_ES">
-<meta property="og:image" content={`${url}/img/og.png`}>
+<meta property="og:image" content={`${Astro.site}/img/og.png`}>
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content={`${url}/img/og.png`}>
+<meta name="twitter:image" content={`${Astro.site}/img/og.png`}>
 <link rel="shortcut icon" href="img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/src/scss/global.scss">

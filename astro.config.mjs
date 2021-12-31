@@ -8,5 +8,7 @@
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
-  // Enable the Preact renderer to support Preact JSX components.
+  buildOptions: {
+    site: 'https://asanchis.dev'
+  }
 });

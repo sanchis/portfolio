@@ -1,10 +1,9 @@
 {
-    "name": "Adrián Sanchís Gallego",
-    "author": "Adrián Sanchís Gallego",
-    "title": "Portfolio de Adrian Sanchis Gallego",
-    "description": "Portfolio de Adrian Sanchis Gallego",
-    "linkedinUrl": "https://www.linkedin.com/in/adrian-sanchis-gallego-817585119/",
-    "githubUrl": "https://github.com/sanchis",
-    "aboutMe": "Software developer especializado en front-end. Soy un entusiasta del desarrollo de aplicaciones web y del diseño de interfaces. Apasionado por el aprendizaje autodidacta y alguien autocrítico con mi trabajo, buscando mejorar constantemente. Me considero alguien directo y responsable. Actualmente vivo en Alicante. Apasionado de la naturaleza y aficionado del mundo del motor.",
-    "url": "https://asanchis.dev"
+  "name": "Adrián Sanchís Gallego",
+  "author": "Adrián Sanchís Gallego",
+  "title": "Portfolio de Adrian Sanchis Gallego",
+  "description": "Portfolio de Adrian Sanchis Gallego",
+  "linkedinUrl": "https://www.linkedin.com/in/adrian-sanchis-gallego-817585119/",
+  "githubUrl": "https://github.com/sanchis",
+  "aboutMe": "Software developer especializado en front-end. Soy un entusiasta del desarrollo de aplicaciones web y del diseño de interfaces. Apasionado por el aprendizaje autodidacta y alguien autocrítico con mi trabajo, buscando mejorar constantemente. Me considero alguien directo y responsable. Actualmente vivo en Alicante. Apasionado de la naturaleza y aficionado del mundo del motor."
 }
