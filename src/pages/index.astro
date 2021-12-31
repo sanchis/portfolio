@@ -1,0 +1,25 @@
+---
+import Footer from '../components/Footer.astro'
+import MainHead from '../components/MainHead.astro'
+import HeaderImage from '../components/Header.astro'
+import Stack from '../components/Stack.astro'
+import Projects from '../components/Projects/index.astro'
+---
+<html lang="es">
+  <head>
+    <MainHead />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <HeaderImage />
+        <main class="wrapper mt4 mb4">
+          <Projects />
+          <Stack />
+        </main>
+      </div>
+    </section>
+    <Footer />
+  </body>
+</html>

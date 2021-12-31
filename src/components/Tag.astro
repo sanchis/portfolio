@@ -1,0 +1,21 @@
+---
+const props = Astro.props
+---
+<style lang="scss">
+@import '../scss/variables';
+.tag {
+  align-items: center;
+  background-color: $light;
+  border-radius: $b-radius;
+  color: $primary;
+  display: inline-flex;
+  font-size: .75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: .75em;
+  padding-right: .75em;
+  white-space: nowrap;
+}
+</style>
+<span class={`tag ${props.class}`}><slot/></span>

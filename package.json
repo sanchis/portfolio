@@ -1,26 +1,15 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "portfolio",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "npm run copyDep && hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "npm run copyDep && hexo server",
-    "copyDep": "node copy_dep.js"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "hexo": {
-    "version": "5.0.0"
-  },
-  "dependencies": {
-    "devicon": "2.14.0",
-    "fs-extra": "10.0.0",
-    "hexo": "5.4.0",
-    "hexo-all-minifier": "^0.5.7",
-    "hexo-generator-category": "1.0.0",
-    "hexo-generator-tag": "1.0.0",
-    "hexo-renderer-ejs": "1.0.0",
-    "hexo-renderer-marked": "4.1.0",
-    "hexo-server": "2.0.0"
+  "devDependencies": {
+    "astro": "^0.21.0",
+    "devicon": "^2.14.0"
   }
 }

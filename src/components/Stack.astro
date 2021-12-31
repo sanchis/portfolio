@@ -1,0 +1,29 @@
+---
+import stack from '../data/stack.json'
+import Box from './Box.astro'
+import Button from './Button.astro'
+---
+<style lang="scss">
+.stack-tech {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-gap: 1rem;
+}
+</style>
+<section class="section">
+    <h1 class="title has-text-centered has-text-accent mb-3">Stack Tecnológico</h1>
+
+    <div class="stack-tech">
+    {stack.map(stck =>
+      <Button class="has-text-centered is-size-2 p-0" href={stck.url} target="_blank" rel="noopener noreferrer"
+          aria-label={stck.name}>
+          <Box>
+              <i class={`devicon-${stck.name} colored`}></i>
+          </Box>
+      </Button>
+    )}
+  </div>
+</section>

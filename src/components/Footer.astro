@@ -1,0 +1,25 @@
+---
+import { linkedinUrl, githubUrl, author } from '../data/site.json'
+import Button from './Button.astro'
+---
+<style lang="scss">
+@import '../scss/variables';
+.footer {
+  background-color: $light;
+  padding: 3rem 1.5rem 6rem;
+}
+</style>
+<footer class="footer pb-6">
+  <div class="content has-text-centered">
+    <p class="mb-3">
+        <Button class="ghost" href={linkedinUrl}>{author}</Button>
+    </p>
+    <Button href={linkedinUrl} class="ghost" aria-label="linkedin">
+        <i class="devicon-linkedin-plain is-size-5"></i>
+    </Button>
+
+    <Button href={githubUrl} class="ghost" aria-label="github">
+        <i class="devicon-github-original is-size-5"></i>
+    </Button>
+  </div>
+</footer>
