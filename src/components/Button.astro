@@ -5,6 +5,11 @@ const { href, target, ...props } = Astro.props
 <style lang="scss">
 @import '../scss/variables';
 
+a {
+  color: $accent;
+  cursor: pointer;
+  text-decoration: none;
+}
 .btn {
   background-color: $white;
   border-color: $light;

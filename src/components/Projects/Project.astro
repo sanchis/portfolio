@@ -1,6 +1,7 @@
 ---
 import Box from './../Box.astro'
 import Button from './../Button.astro'
+import Tag from './../Tag.astro'
 const { project } = Astro.props;
 ---
 
@@ -69,9 +70,9 @@ const { project } = Astro.props;
           <div class=" has-text-centered">
 
               {project.stack.map(stack =>
-                  <span class="tag is-size-5 ">
+                  <Tag class="is-size-6">
                       <i class={`devicon-${stack} colored`}></i>
-                  </span>
+                  </Tag>
               )}
           </div>
           <div class="has-text-centered">
@@ -82,9 +83,7 @@ const { project } = Astro.props;
                   <span>Codigo fuente</span>
               </Button>
               <Button href={project.demo} target="_blank" class="is-accent ml-1">
-                  <span class="icon">
-                      <i class="devicon-devicon-plain colored"></i>
-                  </span>
+                  <i class="icon devicon-devicon-plain colored"></i>
                   <span>Demo</span>
               </Button>
           </div>
