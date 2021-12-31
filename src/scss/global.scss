@@ -4,7 +4,6 @@
 @import "./spacing.scss";
 @import "./container.scss";
 @import "./icon.scss";
-@import "devicon/devicon.min.css";
 
 // TODO remove import and use "use"
 article,
@@ -18,7 +17,7 @@ section {
 }
 
 body {
-  color: #00394c; // TODO variables
+  color: $primary;
   font-size: $fontSize;
   font-weight: 400;
   line-height: 1.5;

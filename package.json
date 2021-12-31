@@ -11,7 +11,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "0.21.0",
+    "astro": "0.22.3",
     "devicon": "2.14.0",
     "fs-extra": "10.0.0",
     "html-minifier": "4.0.0"
