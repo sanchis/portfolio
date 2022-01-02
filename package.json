@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run copy-deps && npm run minify",
+    "build": "astro build && npm run minify",
     "minify": "node minify.js",
-    "copy-deps": "node copyDeps.js",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "postinstall": "node afterInstall.js"
   },
   "devDependencies": {
     "astro": "0.22.3",
