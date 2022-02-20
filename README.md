@@ -1,7 +1,7 @@
 # Portfolio Adrián Sanchis Gallego
 Simple portfolio build with [Astro](https://astro.build/).
 <p align="center">
-  <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/public/img/og.png">
+  <img width="750" src="https://raw.githubusercontent.com/sanchis/portfolio/main/public/og.png">
 </p>
 
 ## 🧞 Commands
