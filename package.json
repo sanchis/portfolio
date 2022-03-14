@@ -11,7 +11,7 @@
     "postinstall": "node afterInstall.js"
   },
   "devDependencies": {
-    "astro": "0.22.20",
+    "astro": "0.24.0",
     "devicon": "2.14.0",
     "fs-extra": "10.0.1",
     "html-minifier": "4.0.0"
