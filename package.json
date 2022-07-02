@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "astro": "0.22.20",
-    "devicon": "2.14.0",
+    "devicon": "2.15.1",
     "fs-extra": "10.1.0",
     "html-minifier": "4.0.0"
   }
