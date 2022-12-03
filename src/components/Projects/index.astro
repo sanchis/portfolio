@@ -1,8 +1,11 @@
 ---
-import projects from './../../data/projects.json'
-import Project from './Project.astro'
+import projects from "./../../data/projects.json";
+import Project from "./Project.astro";
 ---
-<section class="section projects">
-    <h1 class="title has-text-centered has-text-accent mb-3">Proyectos</h1>
-    {projects.map(project => <Project project={project}/>)}
+
+<section>
+  <h1 class="text-center text-accent text-4xl mb-3 mt-20">Proyectos</h1>
+  <div class="flex flex-col space-y-10">
+    {projects.map((project) => <Project project={project} />)}
+  </div>
 </section>

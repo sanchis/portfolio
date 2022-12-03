@@ -1,20 +1,22 @@
 ---
-import Footer from '../components/Footer.astro'
-import MainHead from '../components/MainHead.astro'
-import HeaderImage from '../components/Header.astro'
-import Stack from '../components/Stack.astro'
-import Projects from '../components/Projects/index.astro'
+import Footer from "../components/Footer.astro";
+import MainHead from "../components/MainHead.astro";
+import HeaderImage from "../components/Header.astro";
+import Stack from "../components/Stack.astro";
+import Projects from "../components/Projects/index.astro";
+import "devicon/devicon.min.css";
 ---
+
 <html lang="es">
   <head>
     <MainHead />
   </head>
 
-  <body>
-    <section class="section">
-      <div class="container">
+  <body class="bg-slate-50 text-primary">
+    <section class="px-12 py-6">
+      <div class="lg:max-w-screen-lg md:container m-auto">
         <HeaderImage />
-        <main class="wrapper mt4 mb4">
+        <main class="my-4">
           <Projects />
           <Stack />
         </main>

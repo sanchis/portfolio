@@ -1,55 +1,49 @@
 ---
-import { author,linkedinUrl, githubUrl, url, aboutMe } from '../data/site.json'
-import Box from '../components/Box.astro'
-import Button from '../components/Button.astro'
+import { author, linkedinUrl, githubUrl, aboutMe } from "../data/site.json";
+import Box from "./ui/Box.astro";
+import Button from "./ui/Button.astro";
 ---
-<style lang="scss">
-.logo {
-    max-width: 500px;
-    width: 100%;
-    display: block;
-}
-.buttons-intro{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    a {
-        padding: 10px;
-    }
-}
-</style>
-
 
 <header id="header">
-    <img
-        src="face-primary.png"
-        alt="logo"
-        class="is-block m-auto pb-5 logo"
-    />
+  <img
+    src="face-primary.png"
+    alt="logo"
+    class="block m-auto pb-5 w-full max-w-lg"
+  />
 </header>
 
-<h1 class="title has-text-centered has-text-weight-light mb-3">
-    Hola! Soy
-    <strong class="has-text-weight-bold has-text-accent">
-        {author}
-    </strong>
+<h1 class="text-center font-extralight mb-3 text-4xl">
+  Hola! Soy
+  <strong class="font-bold text-accent">
+    {author}
+  </strong>
 </h1>
-<p class="is-italic has-text-centered">
+<p class="text-center italic">
   {aboutMe}
 </p>
-<div class="buttons-intro mt-4 is-size-4">
-  <Button href={linkedinUrl}
-     aria-label="linkedin" target="_blank" rel="noopener noreferrer"
-     class="has-text-centered mb-0 mt-0 p-1 is-size-5 ghost">
-    <Box class="p-2">
-        <i class="devicon-linkedin-plain colored"></i>
+<div class="mt-4 flex flex-row justify-center text-3xl gap-4">
+  <Button
+    href={linkedinUrl}
+    aria-label="linkedin"
+    target="_blank"
+    rel="noopener noreferrer"
+    variant="ghost"
+    class="px-0"
+  >
+    <Box>
+      <i class="devicon-linkedin-plain colored"></i>
     </Box>
   </Button>
-  <Button href={githubUrl} target="_blank" rel="noopener noreferrer"
-     aria-label="github"
-     class="has-text-centered mb-0 mt-0 p-1 is-size-5 ghost">
-     <Box>
-        <i class="devicon-github-original colored"></i>
-     </Box>
+  <Button
+    href={githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="github"
+    variant="ghost"
+    class="px-0"
+  >
+    <Box>
+      <i class="devicon-github-original colored"></i>
+    </Box>
   </Button>
 </div>

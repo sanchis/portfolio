@@ -1,0 +1,27 @@
+---
+const { href, target, variant, ...props } = Astro.props;
+const classcss =
+  "bg-white rounded transition hover:-translate-y-1 hover:scale-110 cursor-pointer inline-flex justify-center py-2 px-4 text-center whitespace-nowrap items-center";
+const classcssVariant = {
+  ghost: "bg-transparent text-accent hover:shadow-none",
+  accent: "bg-accent hover:shadow-lg hover:shadow-accent",
+  dark: "bg-slate-700 text-white hover:shadow-lg",
+};
+---
+
+{
+  href ? (
+    <a
+      rel="noopener noreferrer"
+      class={`${classcss} ${classcssVariant[variant]} ${props.class}`}
+      target={target}
+      href={href}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button class={`${classcss} ${classcssVariant[variant]} ${props.class}`}>
+      <slot />
+    </button>
+  )
+}

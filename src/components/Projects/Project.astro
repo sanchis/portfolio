@@ -1,92 +1,55 @@
 ---
-import Box from './../Box.astro'
-import Button from './../Button.astro'
-import Tag from './../Tag.astro'
+import Box from "./../ui/Box.astro";
+import Button from "./../ui/Button.astro";
+import Tag from "./../ui/Tag.astro";
 const { project } = Astro.props;
 ---
 
-<style lang="scss">
-.boxProject{
-  display: flex !important;
-  .stack {
-      display: flex;
-      justify-content: space-between;
-      .tag {
-          margin: 0px 2.5px;
-          &:first-child {
-              margin-right: 2.5px;
-          }
-          &:last-child {
-              margin-left: 2.5px;
-          }
-      }
-  }
-
-
-  h3 {
-      font-weight: 400;
-  }
-  figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      img {
-          height: 100px;
-          width: 200px;
-          object-fit: contain;
-      }
-  }
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
-    figure {
-        margin: auto;
-        img {
-
-        }
-    }
-
-    .stack {
-        flex-direction: column;
-        div {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-    }
-  }
-}
-</style>
-<Box class="boxProject mt-5">
-  <figure class="has-text-centered p-3">
-      <img src={project.imgUrl} class="project-logo" alt={`project-${project.name}`} />
+<Box class="flex p-5 md:flex-row flex-col">
+  <figure class="p-3 flex items-center justify-center">
+    <img
+      src={project.imgUrl}
+      class="h-[100px] w-[200px] max-w-none object-contain"
+      alt={`project-${project.name}`}
+    />
   </figure>
-  <div>
-      <h3 class="is-size-4">
-          {project.name}
-      </h3>
-      <p class="content">
-          {project.summary}
-      </p>
-      <div class="stack mt-3 mb-3">
-          <div class=" has-text-centered">
-
-              {project.stack.map(stack =>
-                  <Tag class="is-size-6">
-                      <i class={`devicon-${stack} colored`}></i>
-                  </Tag>
-              )}
-          </div>
-          <div class="has-text-centered">
-              <Button href={project.source} target="_blank" class="is-dark mr-1">
-                  <span class="icon">
-                      <i class="devicon-github-original"></i>
-                  </span>
-                  <span>Codigo fuente</span>
-              </Button>
-              <Button href={project.demo} target="_blank" class="is-accent ml-1">
-                  <i class="icon devicon-devicon-plain colored"></i>
-                  <span>Demo</span>
-              </Button>
-          </div>
+  <div class="w-full">
+    <h3 class="text-3xl font-light">
+      {project.name}
+    </h3>
+    <p>
+      {project.summary}
+    </p>
+    <div class="flex justify-between mt-3 mb-3">
+      <div class="flex gap-2">
+        {
+          project.stack.map((stack: string) => (
+            <Tag class="is-size-6">
+              <i class={`devicon-${stack} colored`} />
+            </Tag>
+          ))
+        }
       </div>
+      <div class="">
+        <Button
+          href={project.source}
+          target="_blank"
+          class="mr-1"
+          variant="dark"
+        >
+          <i class="devicon-github-original mr-1"></i>
+          <span>Codigo fuente</span>
+        </Button>
+        <Button
+          href={project.demo}
+          target="_blank"
+          class="ml-1"
+          variant="accent"
+        >
+          <i class="icon devicon-devicon-plain colored mr-1"></i>
+          <span>Demo</span>
+        </Button>
+      </div>
+    </div>
   </div>
 </Box>
