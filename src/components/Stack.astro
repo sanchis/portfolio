@@ -7,11 +7,11 @@ import Button from "./ui/Button.astro";
 <section class="section">
   <h1 class="text-center text-accent text-4xl mb-3 mt-20">Stack Tecnológico</h1>
 
-  <div class="flex flex-wrap gap-1">
+  <div class="flex flex-wrap justify-center gap-3">
     {
       stack.map((stck) => (
         <Button
-          class="text-4xl px-0"
+          class="text-4xl !px-0"
           variant="ghost"
           href={stck.url}
           target="_blank"
