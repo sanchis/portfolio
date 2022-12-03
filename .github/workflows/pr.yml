@@ -36,5 +36,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci --prefer-offline --no-audit
 
+      - name: Astro check
+        run: npm run check
+
       - name: Run build
         run: npm run build
