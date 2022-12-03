@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "1.6.3",
+    "astro": "1.6.12",
     "devicon": "2.14.0",
     "fs-extra": "10.0.0",
     "@astrojs/tailwind": "^2.1.2",
