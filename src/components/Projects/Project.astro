@@ -20,7 +20,7 @@ const { project } = Astro.props;
     <p>
       {project.summary}
     </p>
-    <div class="flex justify-between mt-3 mb-3">
+    <div class="flex flex-col md:flex-row justify-between mt-3 mb-3">
       <div class="flex gap-2">
         {
           project.stack.map((stack: string) => (
@@ -30,22 +30,12 @@ const { project } = Astro.props;
           ))
         }
       </div>
-      <div class="">
-        <Button
-          href={project.source}
-          target="_blank"
-          class="mr-1"
-          variant="dark"
-        >
+      <div class="flex flex-col md:flex-row gap-1">
+        <Button href={project.source} target="_blank" variant="dark">
           <i class="devicon-github-original mr-1"></i>
           <span>Codigo fuente</span>
         </Button>
-        <Button
-          href={project.demo}
-          target="_blank"
-          class="ml-1"
-          variant="accent"
-        >
+        <Button href={project.demo} target="_blank" variant="accent">
           <i class="icon devicon-devicon-plain colored mr-1"></i>
           <span>Demo</span>
         </Button>
