@@ -6,7 +6,7 @@
     "summary": "Ultimas estadísticas sobre el covid en la ciudad de Alicante. Información sobre todos los municipios de la ciudad de Alicante",
     "demo": "https://covid-alicante.asanchis.dev/",
     "stack": [
-      "nextjs-original",
+      "nextjs-plain",
       "css3-plain",
       "nodejs-plain"
     ]
