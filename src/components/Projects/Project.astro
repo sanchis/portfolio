@@ -5,8 +5,8 @@ import Tag from "./../ui/Tag.astro";
 const { project } = Astro.props;
 ---
 
-<Box class="flex p-5 md:flex-row flex-col">
-  <figure class="p-3 flex items-center justify-center">
+<Box class="flex flex-col p-5 md:flex-row">
+  <figure class="flex items-center justify-center p-3">
     <img
       src={project.imgUrl}
       class="h-[100px] w-[200px] max-w-none object-contain"
@@ -20,7 +20,7 @@ const { project } = Astro.props;
     <p>
       {project.summary}
     </p>
-    <div class="flex flex-col md:flex-row justify-between mt-3 mb-3">
+    <div class="flex flex-col justify-between mt-3 mb-3 md:flex-row">
       <div class="flex gap-2">
         {
           project.stack.map((stack: string) => (
@@ -30,13 +30,13 @@ const { project } = Astro.props;
           ))
         }
       </div>
-      <div class="flex flex-col md:flex-row gap-1">
+      <div class="flex flex-col gap-1 md:flex-row">
         <Button href={project.source} target="_blank" variant="dark">
-          <i class="devicon-github-original mr-1"></i>
-          <span>Codigo fuente</span>
+          <i class="mr-1 devicon-github-original"></i>
+          <span>Código fuente</span>
         </Button>
         <Button href={project.demo} target="_blank" variant="accent">
-          <i class="icon devicon-devicon-plain colored mr-1"></i>
+          <i class="mr-1 icon devicon-devicon-plain colored"></i>
           <span>Demo</span>
         </Button>
       </div>
