@@ -2,6 +2,12 @@
 import Box from "./../ui/Box.astro";
 import Button from "./../ui/Button.astro";
 import Tag from "./../ui/Tag.astro";
+import projects from '../../data/projects.json'
+
+interface Props {
+  project: typeof projects[0]
+}
+
 const { project } = Astro.props;
 ---
 
@@ -31,10 +37,10 @@ const { project } = Astro.props;
         }
       </div>
       <div class="flex flex-col gap-1 md:flex-row">
-        <Button href={project.source} target="_blank" variant="dark">
+        {project.source &&<Button href={project.source} target="_blank" variant="dark">
           <i class="mr-1 devicon-github-original"></i>
           <span>Código fuente</span>
-        </Button>
+        </Button>}
         <Button href={project.demo} target="_blank" variant="accent">
           <i class="mr-1 icon devicon-devicon-plain colored"></i>
           <span>Demo</span>

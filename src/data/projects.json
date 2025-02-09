@@ -46,5 +46,16 @@
       "javascript-plain",
       "react-original"
     ]
+  },
+  {
+    "name": "Mi nutricionista favorita",
+    "source": null,
+    "imgUrl": "https://minutricionistafavorita.com/_astro/apple-touch-icon.TE3THJsa.png",
+    "summary": "Pagina especializa en patologías digestivas, diabetes, tiroides, nutrición infantil, y otros enfoques como la nutrigenética, donde se analizan los datos genéticos para personalizar planes alimenticios. Ofrecen consultas tanto presenciales como online, con un enfoque integral que incluye educación nutricional y asesoramiento continuo.",
+    "demo": "https://minutricionistafavorita.com",
+    "stack": [
+      "astro-plain",
+      "tailwindcss-original"
+    ]
   }
 ]
