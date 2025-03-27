@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/tailwind": "6.0.0",
+    "@astrojs/tailwind": "6.0.2",
     "astro": "5.2.5",
     "devicon": "2.16.0",
     "typescript": "5.7.3"
